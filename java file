@@ -1,0 +1,24 @@
+import java.util.Scanner;
+ 
+public class StringArrayExample 
+{
+    public static void main(String[] args) 
+    {
+        Scanner in=new Scanner(System.in);
+        System.out.println("Enter the size of array: ");
+        int sizeOfArray=in.nextInt();
+        String []names=new String[sizeOfArray];
+        System.out.println("Enter "+sizeOfArray+" strings in array ");
+        //Reading elements 
+        for(int i=0;i<sizeOfArray;i++)
+        {
+            names[i]=in.next();
+        }
+        //Displaying elements
+        for(int i=0;i<sizeOfArray;i++)
+        {
+            System.out.println("String at "+i+"th location is: "+names[i]);
+        }
+        in.close();
+    }
+}
